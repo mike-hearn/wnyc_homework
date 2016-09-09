@@ -7,7 +7,7 @@ elements into real-world web components.
 This will only remain a public repo for as long as the NYPR tech lead needs to
 check my work.
 
-<img src="//i.imgur.com/NZWB6Qk.gif" width="100%" border="1" />
+<img src="https://i.imgur.com/NZWB6Qk.gif" width="100%" border="1" />
 
 ## Local Install / Build
 
