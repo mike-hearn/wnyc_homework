@@ -79,7 +79,7 @@ class ContentCard extends React.Component {
           </div>
         </div>
         <div styleName='cardFooter'>
-          {live ? showLiveListeners : null}
+          {currentListeners ? showLiveListeners : null}
           {timeSchedule ? showScheduledTime : null}
           {followable ? showFollow : null }
           {additionalCallout ? <p><a href='#'>{additionalCallout}</a></p> : null }
