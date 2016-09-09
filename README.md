@@ -7,7 +7,7 @@ elements into real-world web components.
 This will only remain a public repo for as long as the NYPR tech lead needs to
 check my work.
 
-# Local Install / Build
+## Local Install / Build
 
 Clone the repo, then run:
 
