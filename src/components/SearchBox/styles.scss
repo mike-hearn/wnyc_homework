@@ -1,0 +1,25 @@
+@import "../../shared/styles/variables";
+@import "../../shared/styles/mixins";
+
+.searchBoxContainer {
+    height: 36px;
+    border-radius: 20px;
+    background-color: #f3f3f3;
+    padding: 0px 15px;
+    margin: $top-utility-margin 0;
+    flex: 0 1 390px;
+}
+
+.searchBoxField {
+    border: none;
+    background-color: #f3f3f3;
+    flex: 1 1 200px;
+    font-family: 'opensans';
+    font-weight: 400;
+    font-size: 14px;
+    margin-left: 5px;
+
+    &::placeholder {
+        color: black;
+    }
+}

@@ -1,0 +1,41 @@
+@import "../../shared/styles/variables";
+@import "../../shared/styles/mixins";
+
+.weatherTransitContainer {
+    font-size: 20px;
+    font-weight: 300;
+    color: #888;
+}
+
+.weatherIcon {
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+    display: inline;
+}
+
+.weatherText {
+    display: block;
+    width: 100%;
+
+}
+
+.trainLabel {
+    background-color: gold;
+    display: inline-block;
+    color: black;
+    border-radius: 20px;
+    padding: 2px 10px;
+}
+
+.customizeLink {
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1.3px;
+    display: inline;
+    margin-left: 10px;
+
+    a {
+        color: $light-blue-link;
+    }
+}

@@ -1,0 +1,18 @@
+@import "../../shared/styles/variables";
+@import "../../shared/styles/mixins";
+
+/* Above 768px the logo/nav sits to the side of the content; below 768px it
+ * switches to a column view. */
+
+.siteContainer {
+    display: flex;
+    flex: 1 1 100%;
+
+    @include breakpoint(desktop) {
+        flex-direction: row;
+    }
+
+    @include breakpoint(mobile) {
+        flex-direction: column;
+    }
+}

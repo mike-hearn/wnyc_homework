@@ -1,0 +1,28 @@
+@import "../../shared/styles/variables";
+@import "../../shared/styles/mixins";
+
+.contentShelfContainer {
+    flex-direction: column;
+}
+
+.contentShelf {
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+    // Negative margins to offset the individual ContentCard left/right margins
+    // ...I read once that negative margins are a fine and acceptable part of
+    // the CSS spec, yet I still feel the need to defend it
+    margin-left: -$content-card-margin;
+    margin-right: -$content-card-margin;
+}
+
+.shelfTitle {
+    margin: 30px 0;
+}
+.shelfSubtitle {
+    font-size: 20px;
+    color: #888;
+    font-weight: 300;
+    margin-top: -20px;
+}
+

@@ -1,0 +1,20 @@
+// Customized Variables
+
+// Colors
+$wnyc-red: #DE1E3D;
+$wnyc-red-dark: #8D2131;
+$wnyc-pink: #DB0037;
+$light-blue-link: #879ce3;
+
+// Font overrides
+$font-family-sans-serif: 'cu', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$font-family-base:       $font-family-sans-serif;
+$headings-font-weight:   700;
+
+// DRY variables
+$top-utility-margin: 27px;
+$content-card-margin: 10px;
+
+// Other random customizations / default variable overwrites
+$link-hover-decoration: none;
+$font-size-h1: 2.8rem;
