@@ -1,5 +1,7 @@
 # NYPR Tech Screen Homework
 
+**Full site available at <https://mike-hearn.github.io/wnyc_homework/>**
+
 This is the 'take home' portion of the NYPR tech screen. It is a JPEG → Website
 exercise designed to test attention to detail and ability to translate design
 elements into real-world web components.
