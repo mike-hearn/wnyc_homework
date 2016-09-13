@@ -1,6 +1,6 @@
 import {observable, computed, autorun, action, asMap} from 'mobx';
 import fetch from 'isomorphic-fetch';
-import $ from 'jQuery';
+import $ from 'jquery';
 
 const initialContent = {
   sections: {
