@@ -52,14 +52,4 @@ class MainContainer extends React.Component {
   }
 }
 
-MainContainer.propTypes = {
-  optionalArray: React.PropTypes.array,
-  optionalBool: React.PropTypes.bool,
-  optionalFunc: React.PropTypes.func,
-  optionalNumber: React.PropTypes.number,
-  optionalObject: React.PropTypes.object,
-  optionalString: React.PropTypes.string,
-  optionalSymbol: React.PropTypes.symbol,
-};
-
 export default CSSModules(MainContainer, styles);
