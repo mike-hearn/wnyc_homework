@@ -109,7 +109,6 @@ export class UIStore {
       url: weatherUrl,
       dataType: 'jsonp',
       success: function (data) {
-        console.log(data);
         _that.weatherData = data;
         _that.weatherFetchStatus = 'LOADED';
       }
