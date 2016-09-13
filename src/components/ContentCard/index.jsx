@@ -54,7 +54,7 @@ class ContentCard extends React.Component {
       <p onClick={this.handleFollow.bind(this)}>
         <span styleName='followText'>{numberWithCommas(currentFollowers)} Following</span>
         <a
-          href='javascript:void(0)'
+          href="javascript:void(0)"
           styleName={followed ? 'unfollowLink followLink' : 'unfollowLink followLink hidden'}>
           Unfollow
         </a>
@@ -88,15 +88,5 @@ class ContentCard extends React.Component {
     );
   }
 }
-
-ContentCard.propTypes = {
-  optionalArray: React.PropTypes.array,
-  optionalBool: React.PropTypes.bool,
-  optionalFunc: React.PropTypes.func,
-  optionalNumber: React.PropTypes.number,
-  optionalObject: React.PropTypes.object,
-  optionalString: React.PropTypes.string,
-  optionalSymbol: React.PropTypes.symbol,
-};
 
 export default CSSModules(ContentCard, styles, {allowMultiple: true});
