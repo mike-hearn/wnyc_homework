@@ -5,14 +5,14 @@
  * switches to a column view. */
 
 .siteContainer {
-    display: flex;
-    flex: 1 1 100%;
+  display: flex;
+  flex: 1 1 100%;
 
-    @include breakpoint(desktop) {
-        flex-direction: row;
-    }
+  @include breakpoint(desktop) {
+    flex-direction: row;
+  }
 
-    @include breakpoint(mobile) {
-        flex-direction: column;
-    }
+  @include breakpoint(mobile) {
+    flex-direction: column;
+  }
 }

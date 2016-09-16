@@ -4,118 +4,120 @@
 $sidebar-desktop-width: 166px;
 
 .navigationContainer {
-    background-color: $wnyc-red;
+  background-color: $wnyc-red;
+  color: white;
+
+  a {
     color: white;
 
-    a {
-        color: white;
-        &:hover {
-            color: #FAFAFA;
-        }
+    &:hover {
+      color: #fafafa;
     }
+  }
 
-    @include breakpoint(desktop) {
-        flex: 0 0 $sidebar-desktop-width;
-    }
+  @include breakpoint(desktop) {
+    flex: 0 0 $sidebar-desktop-width;
+  }
 }
 
 .fixedSidebar {
-    @include breakpoint(desktop) {
-        flex-flow: column nowrap;
-        height: 100%;
-        position: fixed;
-        width: $sidebar-desktop-width;
-    }
+  @include breakpoint(desktop) {
+    flex-flow: column nowrap;
+    height: 100%;
+    position: fixed;
+    width: $sidebar-desktop-width;
+  }
 
-    @include breakpoint(mobile) {
-        flex-direction: column;
-        width: 100%;
-    }
+  @include breakpoint(mobile) {
+    flex-direction: column;
+    width: 100%;
+  }
 }
 
 .logoAndDonationContainer {
-    @include breakpoint(desktop) {
-        justify-content: center;
-    }
-    @include breakpoint(mobile) {
-        justify-content: space-between;
-        padding-right: 10px;
-    }
+  @include breakpoint(desktop) {
+    justify-content: center;
+  }
+
+  @include breakpoint(mobile) {
+    justify-content: space-between;
+    padding-right: 10px;
+  }
 }
 
 .wnycLogo {
-    @include breakpoint(desktop) {
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
-    @include breakpoint(mobile) {
-        margin: 17px;
-        width: 74px;
-    }
+  @include breakpoint(desktop) {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  @include breakpoint(mobile) {
+    margin: 17px;
+    width: 74px;
+  }
 }
 
-
 .links {
-    // Links background changes between desktop/mobile
+  // Links background changes between desktop/mobile
+  @include breakpoint(desktop) {
+    background-color: $wnyc-red;
+    flex-grow: 1;
+  }
+
+  @include breakpoint(mobile) {
+    background-color: $wnyc-red-dark;
+    overflow-x: scroll;
+    min-height: 30px;
+
+    // Used to constrain the ul/li elements contained within, allowing for
+    // overflowing scroll.
+    div {
+      width: 1px;
+    }
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    display: inherit;
+    flex: 0 0 auto;
+
     @include breakpoint(desktop) {
-        background-color: $wnyc-red;
-        flex-grow: 1;
+      flex-direction: column;
+      align-items: flex-end;
+      margin-top: 20px;
+      margin-left: 55px;
     }
 
     @include breakpoint(mobile) {
-        background-color: $wnyc-red-dark;
-        overflow-x: scroll;
-        min-height: 30px;
+      display: block;
+      white-space: nowrap;
+      margin: 0;
+    }
+  }
 
-        // Used to constrain the ul/li elements contained within, allowing for
-        // overflowing scroll.
-        div {
-            width: 1px;
-        }
+  li {
+    font-family: $secondary-font-family;
+    font-size: 13.2px;
+    font-weight: 300;
+    letter-spacing: 1.7px;
+    -webkit-font-smoothing: subpixel-antialiased; // ...because Safari renders it too light
+
+    @include breakpoint(desktop) {
+      flex: 0 1 36px;
+      align-items: center;
     }
 
-
-    ul {
-        list-style-type: none;
-        padding: 0;
-
-        @include breakpoint(desktop) {
-            flex-direction: column;
-            align-items: flex-end;
-            margin-top: 20px;
-            margin-left: 55px;
-        }
-
-        @include breakpoint(mobile) {
-            display: block;
-            white-space: nowrap;
-            margin: 0;
-        }
+    @include breakpoint(mobile) {
+      padding: 15px;
+      display: inline-block;
     }
-
-    li {
-        font-family: 'opensans';
-        font-size: 13.2px;
-        font-weight: 300;
-        letter-spacing: 1.7px;
-        -webkit-font-smoothing: subpixel-antialiased; // ...because Safari renders it too light
-
-
-        @include breakpoint(desktop) {
-            flex: 0 1 36px;
-            align-items: center;
-        }
-
-        @include breakpoint(mobile) {
-            padding: 15px;
-            display: inline-block;
-        }
-    }
+  }
 }
 
 .signInLink {
-    @include breakpoint(desktop) {
-        margin-top: auto;
-    }
+  @include breakpoint(desktop) {
+    margin-top: auto;
+  }
 }
 

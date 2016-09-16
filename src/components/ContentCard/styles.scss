@@ -2,86 +2,87 @@
 @import "../../shared/styles/mixins";
 
 .contentCardContainer {
-    width: 244px;
-    flex-direction: column;
-    margin-left: $content-card-margin;
-    margin-right: $content-card-margin;
-    margin-bottom: 15px;
+  width: 244px;
+  flex-direction: column;
+  margin-left: $content-card-margin;
+  margin-right: $content-card-margin;
+  margin-bottom: 15px;
 }
 
 .innerContentCardContainer {
-    flex-direction: column;
-    box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
-    border-radius: 5px;
-    height: 350px;
+  flex-direction: column;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  height: 350px;
 }
 
 .brandAndTitleContainer {
-    margin: 20px 30px 20px 20px;
-    flex-direction: column;
+  margin: 20px 30px 20px 20px;
+  flex-direction: column;
 }
 
 .brand {
-    display: inherit;
-    color: $wnyc-pink;
-    text-transform: uppercase;
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 1.25px;
+  display: inherit;
+  color: $wnyc-pink;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.25px;
 }
 
 .title {
-    font-size: 20px;
-    font-weight: 300;
-    color: #696969;
+  font-size: 20px;
+  font-weight: 300;
+  color: #696969;
 }
 
 .liveIconRed {
-    display: inherit;
-    width: 18px;
-    height: 18px;
-    margin-right: 4px;
+  display: inherit;
+  width: 18px;
+  height: 18px;
+  margin-right: 4px;
 }
 
 .cardFooter {
-    color: #ababab;
-    font-size: 11px;
-    font-weight: 400;
-    justify-content: flex-end;
-    letter-spacing: 1.5px;
-    margin-top: 10px;
-    text-align: right;
-    text-transform: uppercase;
-    position: relative;
+  color: #ababab;
+  font-size: 11px;
+  font-weight: 400;
+  justify-content: flex-end;
+  letter-spacing: 1.5px;
+  margin-top: 10px;
+  text-align: right;
+  text-transform: uppercase;
+  position: relative;
 
-    a {
-        margin-left: 10px;
-        color: $light-blue-link;
+  a {
+    margin-left: 10px;
+    color: $light-blue-link;
 
-        &:focus {
-            text-decoration: none;
-        }
+    &:focus {
+      text-decoration: none;
     }
+  }
 
-    span.followText {
-        margin-right: 75px;
-    }
+  span.followText {
+    margin-right: 75px;
+  }
 
-    a.unfollowLink {
-        color: $wnyc-pink;
-        font-weight: 700;
-        position: absolute;
-        right: 0;
-    }
+  a.unfollowLink {
+    color: $wnyc-pink;
+    font-weight: 700;
+    position: absolute;
+    right: 0;
+  }
 
-    a.followLink {
-        position: absolute;
-        right: 0;
-        transition: all 0.5s ease;
-    }
-    a.hidden {
-        opacity: 0;
-        visibility: hidden;
-        transform: rotateX(180deg);
-    }
+  a.followLink {
+    position: absolute;
+    right: 0;
+    transition: all 0.5s ease;
+  }
+
+  a.hidden {
+    opacity: 0;
+    visibility: hidden;
+    transform: rotateX(180deg);
+  }
 }

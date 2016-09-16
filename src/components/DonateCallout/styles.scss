@@ -2,58 +2,58 @@
 @import "../../shared/styles/mixins";
 
 .donateButtonContainer {
-    align-items: center;
-    font-family: 'opensans';
-    font-weight: 400;
-    font-size: 14px;
+  align-items: center;
+  font-family: $secondary-font-family;
+  font-weight: 400;
+  font-size: 14px;
 }
 
 .desktop {
-    composes: donateButtonContainer;
+  composes: donateButtonContainer;
 
-    @include breakpoint(mobile) {
-        display: none;
-    }
+  @include breakpoint(mobile) {
+    display: none;
+  }
 
-    margin: $top-utility-margin 0;
+  margin: $top-utility-margin 0;
 }
 
 .mobile {
-    composes: donateButtonContainer;
-    .callout {
-        display: none;
-    }
+  composes: donateButtonContainer;
 
-    @include breakpoint(desktop) {
-        display: none;
-    }
+  .callout {
+    display: none;
+  }
 
+  @include breakpoint(desktop) {
+    display: none;
+  }
 }
 
 .donateButton {
-    align-items: center;
-    border-radius: 30px;
-    display: flex;
-    flex-shrink: 0;
-    height: 36px;
-    justify-content: center;
-    width: 100px;
-    letter-spacing: 1.5px;
+  align-items: center;
+  border-radius: 30px;
+  display: flex;
+  flex-shrink: 0;
+  height: 36px;
+  justify-content: center;
+  width: 100px;
+  letter-spacing: 1.5px;
 
-    &:hover {
-        color: gold;
-    }
+  &:hover {
+    color: gold;
+  }
 
-    @include breakpoint(desktop) {
-        margin-left: 10px;
-        background-color: $wnyc-red;
-        color: white;
-    }
+  @include breakpoint(desktop) {
+    margin-left: 10px;
+    background-color: $wnyc-red;
+    color: white;
+  }
 
-    @include breakpoint(mobile) {
-        margin-left: 10px;
-        background-color: transparent;
-        border: 2px solid white;
-        color: white;
-    }
+  @include breakpoint(mobile) {
+    margin-left: 10px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+  }
 }

@@ -12,6 +12,7 @@ module.exports = {
   output: {
     path: __dirname + '/dist',
     publicPath: '/wnyc_homework/dist/',
+    // publicPath: '/dist/',
     filename: 'bundle.js'
   },
   resolve: {

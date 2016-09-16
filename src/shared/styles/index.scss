@@ -6,17 +6,16 @@
 // Bootstrap import
 @import "~bootstrap/scss/bootstrap";
 
-
 // Global styles
-html, body, #main {
-    display: flex;
-    flex: 1 1 100%;
-    min-height: 100%;
+html,
+body,
+#main {
+  display: flex;
+  flex: 1 1 100%;
+  min-height: 100%;
 }
 
-div, span, h1, h2, h3, h4, h5, h6, p, ul, li {
-    // TODO Remove
-    // outline: 1px solid rgba(0,0,0,0.2);
-    display: inherit;
-    flex: 0 0 auto;
+div {
+  display: inherit;
+  flex: 0 0 auto;
 }
