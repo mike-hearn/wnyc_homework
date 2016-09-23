@@ -16,7 +16,7 @@ check my work.
 Clone the repo, then run:
 
 ```
-$ npm package install
+$ npm install
 $ npm run dev
 ```
 
